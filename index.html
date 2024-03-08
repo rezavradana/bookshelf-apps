@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+    
+    <main>
+        <div class="search-book">
+            <i class="fa fa-search">
+            </i>
+            <input id="searchBook" type="text" placeholder="Cari buku...">
+        </div>
+
+        <div class="input-book">
+            <h1>Tambahkan Buku</h1>
+            <form id="form">
+                <div class="input">
+                    <label for="bookTitle">Judul Buku</label>
+                    <input type="text" id="bookTitle" required>
+                </div>
+                <div class="input">
+                    <label for="authorBook">Penulis</label>
+                    <input type="text" id="authorBook" required>
+                </div>
+                <div class="input">
+                    <label for="yearBook">Tahun</label>
+                    <input type="number" id="yearBook" required>
+                </div>
+                <div class="inputCheckBox">
+                    <label for="isCompleted">Selesai dibaca</label>
+                    <input type="checkbox" id="isCompleted">
+                </div>
+                
+                <button id="submitForm">Submit</button>
+
+                <div id="divEdit">
+
+                </div>
+            </form>
+        </div>
+
+        <div class="list-book">
+            <h1>Belum Selesai Dibaca</h1>
+            <hr>
+            <div id="unfinished-book">   
+        
+            </div>
+        </div>
+
+        <div class="list-book">
+            <h1>Sudah Selesai Dibaca</h1>
+            <hr>
+            <div id="finished-book">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

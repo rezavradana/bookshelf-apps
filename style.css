@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #51829B;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EADFB4;
+    padding: 20px;
+    font-size: 20px;    
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-block: 20px;    
+    font-size: 16px;
+}
+
+main .search-book{
+    display: flex;
+    flex-flow: row nowrap;    
+    margin-inline: 20px;    
+    border: 1px solid black;   
+    align-items: center;   
+    border-radius: 10px;
+}
+
+main .search-book input{
+    padding: 8px;
+    width: 100%;    
+    border-radius: 10px;
+    border: none;
+}
+
+main .search-book input:focus{   
+    outline: none;
+}
+
+main .search-book i{
+    font-size: 20px; 
+    margin-inline: 5px;   
+    cursor: pointer;
+}
+
+main .input-book{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid black;    
+}
+
+main .input-book h1{
+    text-align: center;
+}
+
+main .input-book form{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;    
+    gap: 10px;
+}
+
+main .input-book form .input{
+    display: flex;
+    flex-flow: column nowrap;    
+}
+
+main .input-book form .input input{
+    padding: 8px;
+    border-radius: 10px;    
+}
+
+main .input-book form .inputCheckBox{
+    display: flex;
+    align-items: center;
+    gap: 5px;    
+}
+
+main .input-book form .inputCheckBox input{
+    cursor: pointer;
+}
+
+main .input-book form button, .editBtn{
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #51829B;
+    color: white;
+}
+
+main .input-book form button:hover{
+    background-color: #EADFB4;    
+    color: #51829B;
+}
+
+main .list-book{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;      
+}
+
+main .list-book hr{
+    background-color: #EADFB4;
+    border: 0;
+    height: 3px;
+    width: 50%;
+}
+
+main .list-book #unfinished-book .container, main .list-book #finished-book .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #EADFB4;
+    border-radius: 10px;
+    margin-block: 10px;    
+}
+
+main .list-book .content2{
+    display: flex;
+    font-size: 30px;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+main .list-book .content2 .fa-trash:hover{
+    color: red;   
+}
+
+main .list-book .content2 .fa-undo:hover{
+    color: turquoise;   
+}
+
+main .list-book .content2 .fa-check-circle:hover{
+    color: greenyellow;   
+}
+
+main .list-book .content2 .fa-edit:hover{
+    color: yellow;   
+}
+
+
